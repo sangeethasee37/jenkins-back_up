@@ -1,0 +1,63 @@
+Started by user [8mha:////4Buh37poYHuKs1XawdF8vicRaI2QHQhhm8ZVLtJ265CzAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/c_projects
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/c_projects/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sangeethasee37/practice-1 # timeout=10
+Fetching upstream changes from https://github.com/sangeethasee37/practice-1
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sangeethasee37/practice-1 +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 5a537a219cf4168839f5a2da6567db119ff31885 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5a537a219cf4168839f5a2da6567db119ff31885 # timeout=10
+Commit message: "added c sourcr code"
+ > git rev-list --no-walk 5a537a219cf4168839f5a2da6567db119ff31885 # timeout=10
+[c_projects] $ /bin/sh -xe /tmp/jenkins3926832346803817395.sh
++ cd /var/lib/jenkins/workspace/c_projects
++ make
+gcc -c main.c
+main.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ main() {
+ ^~~~
+main.c: In function ‘main’:
+main.c:3:1: warning: implicit declaration of function ‘biggest2’ [-Wimplicit-function-declaration]
+ biggest2();
+ ^~~~~~~~
+main.c:4:1: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+ factorial();
+ ^~~~~~~~~
+main.c:5:1: warning: implicit declaration of function ‘biggest3’ [-Wimplicit-function-declaration]
+ biggest3();
+ ^~~~~~~~
+main.c:6:1: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+ reverse();
+ ^~~~~~~
+main.c:7:1: warning: implicit declaration of function ‘pallindrome’ [-Wimplicit-function-declaration]
+ pallindrome();
+ ^~~~~~~~~~~
+main.c:8:1: warning: implicit declaration of function ‘sumnumbers’ [-Wimplicit-function-declaration]
+ sumnumbers();
+ ^~~~~~~~~~
+main.c:9:1: warning: implicit declaration of function ‘fibonacci’ [-Wimplicit-function-declaration]
+ fibonacci();
+ ^~~~~~~~~
+main.c:10:1: warning: implicit declaration of function ‘sorting’ [-Wimplicit-function-declaration]
+ sorting();
+ ^~~~~~~
+gcc -c big2.c
+gcc -c fact.c
+fact.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ factorial() {
+ ^~~~~~~~~
+gcc -c big3.c
+gcc -c rev.c
+gcc -c pallindrome.c
+gcc -c sum2.c
+gcc -c fibbonaci.c
+gcc -c sort.c
+gcc -o ABC.exe main.o big2.o fact.o big3.o rev.o pallindrome.o sum2.o fibbonaci.o sort.o
+Finished: SUCCESS

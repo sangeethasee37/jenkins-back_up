@@ -1,0 +1,22 @@
+Started by user [8mha:////4Buh37poYHuKs1XawdF8vicRaI2QHQhhm8ZVLtJ265CzAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/c_projects
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/sangeethasee37/practice-1
+ > git init /var/lib/jenkins/workspace/c_projects # timeout=10
+Fetching upstream changes from https://github.com/sangeethasee37/practice-1
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sangeethasee37/practice-1 +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sangeethasee37/practice-1 # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 5a537a219cf4168839f5a2da6567db119ff31885 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5a537a219cf4168839f5a2da6567db119ff31885 # timeout=10
+Commit message: "added c sourcr code"
+First time build. Skipping changelog.
+Finished: SUCCESS

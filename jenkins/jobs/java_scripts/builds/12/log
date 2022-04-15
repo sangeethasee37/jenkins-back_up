@@ -1,0 +1,24 @@
+Started by user [8mha:////4Buh37poYHuKs1XawdF8vicRaI2QHQhhm8ZVLtJ265CzAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/java_scripts
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/java_scripts/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sangeethasee37/java_scripts # timeout=10
+Fetching upstream changes from https://github.com/sangeethasee37/java_scripts
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sangeethasee37/java_scripts +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 157ee76ce127d16ae7e5b4d811b08f3df9871a37 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 157ee76ce127d16ae7e5b4d811b08f3df9871a37 # timeout=10
+Commit message: "Merge branch 'master' of github.com:efsavage/hello-world-war"
+ > git rev-list --no-walk 157ee76ce127d16ae7e5b4d811b08f3df9871a37 # timeout=10
+[java_scripts] $ /bin/sh -xe /tmp/jenkins7018921008886278326.sh
++ cd /var/lib/jenkins/workspace/java_scripts
++ mvn
+/tmp/jenkins7018921008886278326.sh: line 3: mvn: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

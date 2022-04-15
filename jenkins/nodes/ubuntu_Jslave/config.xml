@@ -1,0 +1,23 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<slave>
+  <name>ubuntu_Jslave</name>
+  <description></description>
+  <remoteFS>/home/jenkins</remoteFS>
+  <numExecutors>1</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.806.v2253cedd3295">
+    <host>172.31.43.204</host>
+    <port>22</port>
+    <credentialsId>02d70de6-9425-4dd6-ac5f-cfa959798948</credentialsId>
+    <launchTimeoutSeconds>60</launchTimeoutSeconds>
+    <maxNumRetries>10</maxNumRetries>
+    <retryWaitTime>15</retryWaitTime>
+    <sshHostKeyVerificationStrategy class="hudson.plugins.sshslaves.verifiers.ManuallyTrustedKeyVerificationStrategy">
+      <requireInitialManualTrust>false</requireInitialManualTrust>
+    </sshHostKeyVerificationStrategy>
+    <tcpNoDelay>true</tcpNoDelay>
+  </launcher>
+  <label>ubuntu_slave</label>
+  <nodeProperties/>
+</slave>
